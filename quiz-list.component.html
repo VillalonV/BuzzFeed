@@ -1,0 +1,7 @@
+<div class="quiz-grid">
+  <div *ngFor="let quiz of quizzes" class="quiz-card">
+    <img [src]="'assets/' + quiz.image" alt="{{quiz.title}}">
+    <h3>{{quiz.title}}</h3>
+    <a [routerLink]="['/quiz', quiz.id]">Fazer quiz</a>
+  </div>
+</div>
